@@ -31,7 +31,7 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        //测试github
         loginUser = (EditText) findViewById(R.id.activity_login_user);
         loginUser.setText(SharedPreferencesUtil.getString("theLastUserId",""));
         loginPassword = (EditText) findViewById(R.id.activity_login_password);
