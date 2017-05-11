@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/setting_activity_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/activity_register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_reply_white_48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_below="@+id/setting_activity_title_bar"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/activity_register_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:maxLength="11"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_gray_edit_bg"
+            android:gravity="center"
+            android:hint="账号"
+            />
+        <EditText
+            android:id="@+id/activity_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:maxLength="11"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/white"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_gray_edit_bg"
+            android:gravity="center"
+            android:hint="密码"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:maxHeight="16.0sp"
+            android:text="性别"
+            android:textColor="#cc222222"
+            android:textSize="15.0sp"/>
+
+        <CheckBox
+            android:id="@+id/btn_register_info_sex"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_sex_selector"
+            android:button="@null"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:maxHeight="17.0sp"
+            android:text="身高(cm)"
+            android:textColor="#cc222222"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_register_info_height_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:maxHeight="24.0sp"
+            android:text="165"
+            android:textColor="#cc222222"
+            android:textSize="24.0sp"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.xiaopeng.safemanager.views.RulerView
+                android:id="@+id/ruler_height"
+                android:layout_width="fill_parent"
+                android:layout_height="58.0dip"
+                android:layout_marginTop="24.0dip"
+                app:alphaEnable="true"
+                app:lineColor="@color/gray"
+                app:lineMaxHeight="40dp"
+                app:lineMidHeight="30dp"
+                app:lineMinHeight="20dp"
+                app:lineSpaceWidth="10dp"
+                app:lineWidth="2dip"
+                app:textColor="@color/black"
+                app:minValue="80.0"
+                app:maxValue="250.0"
+                app:perValue="1"
+                app:selectorValue="165.0"
+                />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_info_ruler_height"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="体重(kg)"
+            android:textColor="#cc222222"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_register_info_weight_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:maxHeight="24.0sp"
+            android:text="55"
+            android:textColor="#cc222222"
+            android:textSize="24.0sp"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <com.xiaopeng.safemanager.views.RulerView
+                android:id="@+id/ruler_weight"
+                android:layout_width="fill_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                app:alphaEnable="true"
+                app:lineColor="@color/gray"
+                app:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="14.0dip"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_info_ruler_weight"/>
+        </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/activity_register_ok"
+                android:background="@drawable/selecter_start_order"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@drawable/selecter_text_color"
+                android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

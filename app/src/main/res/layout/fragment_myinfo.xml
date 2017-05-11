@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="用户管理"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_myinfo_setting_user"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="@dimen/base_padding"
+        android:background="@color/light">
+
+        <com.xiaopeng.safemanager.views.CircleImageView
+            android:id="@+id/fragment_info_user_head_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hugh"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/dark" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_keyboard_arrow_right_blue_grey_500_48dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_myinfo_back_table"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="@dimen/base_padding"
+        android:background="@color/dark">
+
+        <com.xiaopeng.safemanager.views.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hugh"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/light" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="毕业设计 后台"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_equalizer_white_24dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_myinfo_design"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/light"
+        android:padding="@dimen/base_padding">
+
+        <com.xiaopeng.safemanager.views.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hugh"
+            app:civ_border_color="@color/dark"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_keyboard_arrow_right_blue_grey_500_48dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_myinfo_users"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="@dimen/base_padding"
+        android:background="@color/dark">
+
+        <com.xiaopeng.safemanager.views.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hugh"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/light" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="退出登录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="数据管理"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/activity_sale_order_finish_form_rg"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp">
+                <RadioButton
+                    android:id="@+id/rg_sale_order_finish_form_activity_week"
+                    android:text="本周"
+                    style="@style/mRadioButtonStyle"
+                    />
+                <RadioButton
+                    android:id="@+id/rg_sale_order_finish_form_activity_mouth"
+                    android:text="本月"
+                    style="@style/mRadioButtonStyle"/>
+                <RadioButton
+                    android:id="@+id/rg_sale_order_finish_form_activity_year"
+                    android:text="本年"
+                    style="@style/mRadioButtonStyle"/>
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black"/>
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <lecho.lib.hellocharts.view.ColumnChartView
+                    android:layout_margin="20dp"
+                    android:id="@+id/activity_sale_order_finish_column_chart_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="健康管理数据"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="个人数据"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

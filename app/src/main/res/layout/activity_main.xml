@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_rg"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/activity_main_rg"
+        android:background="@color/gray" />
+
+    <RadioGroup
+        android:id="@+id/activity_main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/grey"
+        >
+
+        <RadioButton
+            android:id="@+id/activity_main_rg_wait_work"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+
+            android:drawableTop="@drawable/rb_select_wait_work_tab"
+            android:gravity="center"
+            android:text="健康"
+            android:textColor="@drawable/rb_store_text_select_color"
+            android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/activity_main_rg_address_book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_select_address_book_tab"
+            android:gravity="center"
+            android:text="饮食"
+            android:textColor="@drawable/rb_store_text_select_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/activity_main_rg_business"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_select_business_tab"
+            android:gravity="center"
+            android:text="运动"
+            android:textColor="@drawable/rb_store_text_select_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/activity_main_rg_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_select_message_tab"
+            android:gravity="center"
+            android:text="数据"
+            android:textColor="@drawable/rb_store_text_select_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/activity_main_rg_my_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_select_myinfo_tab"
+            android:gravity="center"
+            android:text="用户"
+            android:textColor="@drawable/rb_store_text_select_color"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="-10dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/guide_checked"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <CheckBox
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/rb_select_business_tab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
