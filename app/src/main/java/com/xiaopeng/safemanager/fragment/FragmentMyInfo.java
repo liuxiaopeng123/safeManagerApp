@@ -13,6 +13,7 @@ import com.xiaopeng.safemanager.activity.BackTableActivity;
 import com.xiaopeng.safemanager.activity.SportDataActivity;
 import com.xiaopeng.safemanager.activity.LoginActivity;
 import com.xiaopeng.safemanager.activity.RegisterActivity;
+import com.xiaopeng.safemanager.activity.WelcomActivity;
 import com.xiaopeng.safemanager.utils.SharedPreferencesUtil;
 import com.xiaopeng.safemanager.views.CircleImageView;
 
@@ -79,7 +80,7 @@ public class FragmentMyInfo extends BaseFragment {
                 ((Activity)context).finish();
                 break;
             case R.id.fragment_myinfo_setting_user:
-                startActivity(new Intent(context, RegisterActivity.class));
+                startActivity(new Intent(context, WelcomActivity.class));
                 break;
             case R.id.fragment_myinfo_back_table:
                 startActivity(new Intent(context, BackTableActivity.class));

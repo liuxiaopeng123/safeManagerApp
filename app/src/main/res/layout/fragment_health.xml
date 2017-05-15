@@ -124,12 +124,13 @@
                         android:text="收缩压"
                         android:layout_gravity="center"/>
                     <TextView
+                        android:id="@+id/fragment_health_ssy"
                         android:layout_width="0dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
-                        android:text="两场篮球赛"
+                        android:text="0.0"
                         android:layout_gravity="center"/>
                 </LinearLayout>
                 <View
@@ -154,12 +155,13 @@
                         android:text="舒张压"
                         android:layout_gravity="center"/>
                     <TextView
+                        android:id="@+id/fragment_health_szy"
                         android:layout_width="0dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
-                        android:text="两场篮球赛"
+                        android:text="0.0"
                         android:layout_gravity="center"/>
                 </LinearLayout>
                 <View
@@ -186,12 +188,13 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/fragment_health_xl"
                         android:layout_width="0dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
-                        android:text="两场篮球赛"
+                        android:text="0"
                         android:layout_gravity="center"/>
                 </LinearLayout>
             </LinearLayout>

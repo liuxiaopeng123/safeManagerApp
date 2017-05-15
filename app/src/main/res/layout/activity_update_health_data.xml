@@ -66,6 +66,7 @@
                 android:textSize="18sp" />
         </RelativeLayout>
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -79,13 +80,14 @@
                 android:textSize="22sp" />
 
             <EditText
+                android:id="@+id/activity_update_health_ssy"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/shape_gray_edit_bg"
                 android:gravity="center"
-                android:hint="账号"
+                android:hint="请输入收缩压"
                 android:maxLength="11"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white" />
@@ -105,13 +107,14 @@
                 android:textSize="22sp" />
 
             <EditText
+                android:id="@+id/activity_update_health_szy"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/shape_gray_edit_bg"
                 android:gravity="center"
-                android:hint="账号"
+                android:hint="请输入舒张压"
                 android:maxLength="11"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white" />
@@ -130,19 +133,21 @@
                 android:textSize="22sp" />
 
             <EditText
+                android:id="@+id/activity_update_health_xl"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/shape_gray_edit_bg"
                 android:gravity="center"
-                android:hint="账号"
+                android:hint="请输入心率"
                 android:maxLength="11"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white" />
         </LinearLayout>
 
         <Button
+            android:id="@+id/activity_update_health_commit"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="40dp"

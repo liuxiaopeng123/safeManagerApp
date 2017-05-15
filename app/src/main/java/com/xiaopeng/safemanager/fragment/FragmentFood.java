@@ -62,7 +62,7 @@ public class FragmentFood extends BaseFragment {
             @Override
             public void onParseSuccess(GsonObjModel<List<FoodDataBean>> response, String result) {
                 super.onParseSuccess(response, result);
-                Log.i("xiaopeng--success", ""+result+response.data.size());
+                Log.i("xiaopeng--success", ""+result);
                 if (response.code==200){
                     foodDataBeanList=response.data;
                     myAdapter.notifyDataSetChanged();
